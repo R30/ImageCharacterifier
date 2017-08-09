@@ -7,10 +7,16 @@ class Image_characterifier {
 
     //the characters from which the characterified flag will be constructed
     private String chars_to_use;
-    private final double flagwidth = 500.0;
+    private double flagwidth = 500.0;
 
     public Image_characterifier(String chars_to_use){
+        this.flagwidth = 500.0;
         this.chars_to_use = chars_to_use;
+    }
+
+    public Image_characterifier(String chars_to_use, double width){
+        this.chars_to_use = chars_to_use;
+        this.flagwidth = width;
     }
 
     //given an image, it returns the characterified version

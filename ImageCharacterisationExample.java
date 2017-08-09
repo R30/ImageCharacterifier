@@ -11,7 +11,6 @@ public class ImageCharacterisationExample {
             System.out.println("You need to specify a URL to the image you wish to characterify!");
             return;
         }
-        int avg=0;
         try {
             String image_url = args[0];
             //read image
