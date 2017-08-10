@@ -1,3 +1,5 @@
+package src;
+
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
@@ -16,7 +18,7 @@ public class ImageCharacterisationExample {
             //read image
             BufferedImage img_to_be_characterified = ImageIO.read(new URL(image_url));
             //Characterify image
-            Image_characterifier characterifier = new Image_characterifier("&<|>(?) ");
+            Image_characterifier characterifier = new Image_characterifier("&<(!|?~ ", 1000.0);
             System.out.println(characterifier.characterify(img_to_be_characterified).toString());
 
         } catch (MalformedURLException e) {
